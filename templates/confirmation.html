@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pawsome Pet Products - Confirmation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Pawsome Pet Products</h1>
+<nav>
+<a href="/">Home</a>
+<a href="/products">Products</a>
+<a href="/cart">Cart</a>
+<a href="/checkout">Checkout</a>
+</nav>
+</header>
+
+<main>
+<div class="confirmation">
+<h2>Order Confirmation</h2>
+<p>Thank you for your order! Your order details are as follows:</p>
+
+<ul>
+<li>Order Number: {{ order_number }}</li>
+<li>Order Date: {{ order_date }}</li>
+<li>Total Amount: {{ total_price }}</li>
+</ul>
+
+<p>Your order will be processed and shipped within the next 24 hours. You will receive an email when your order has been shipped.</p>
+
+<a href="/">Return to Home</a>
+</div>
+</main>
+
+<footer>
+<p>Copyright 2023 Pawsome Pet Products</p>
+</footer>
+</body>
+</html>
+
+
+style.css
+css
+body {
+font-family: Arial, sans-serif;
+}
+
+header {
+background-color: #f1f1f1;
+padding: 20px;
+}
+
+nav {
+float: right;
+}
+
+nav a {
+margin-right: 20px;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+main {
+margin-top: 20px;
+}
+
+.banner {
+height: 200px;
+background-image: url("banner.jpg");
+background-position: center;
+background-size: cover;
+}
+
+.introduction {
+padding: 20px;
+}
+
+.products {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.product {
+width: 200px;
+margin
